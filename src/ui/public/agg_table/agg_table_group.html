@@ -1,4 +1,5 @@
 <table ng-if="rows" class="table agg-table-group">
+  <!-- style="position: absolute; width: 100%; height: 90%;" -->
   <thead ng-repeat-start="table in rows">
     <tr>
       <th ng-if="table.tables">
@@ -16,6 +17,7 @@
   </tbody>
 </table>
 
+<!-- <table ng-if="columns" class="table agg-table-group" style="position: absolute; width: 100%; height: 90%;"> -->
 <table ng-if="columns" class="table agg-table-group">
   <thead>
     <tr>

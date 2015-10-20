@@ -3,8 +3,10 @@
   list="sortedRows"
   per-page-prop="perPage"
   class="agg-table">
+  <!-- style="position: absolute; height: 100%;"> -->
+  <!-- <div class="agg-table-paginated" style="display: flex; flex-direction: column; overflow-x: scroll; height: 100%;"> -->
   <div class="agg-table-paginated">
-    <table class="table table-condensed">
+    <table style="width: 100%;">
       <thead>
         <tr bindonce>
           <th
@@ -28,6 +30,11 @@
       </thead>
       <tbody kbn-rows="page" kbn-rows-min="perPage"></tbody>
     </table>
+    <!-- <div style="-webkit-flex:1; overflow-y: scroll"> -->
+      <!-- <table class="table table-condensed"> -->
+        <!-- <tbody kbn-rows="page" kbn-rows-min="perPage"></tbody> -->
+      <!-- </table> -->
+    <!-- </div> -->
   </div>
 
   <!-- auto-inserted by the paginate directive... -->
